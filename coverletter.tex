@@ -1,0 +1,137 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\colorlet{text}{text!5!black}
+\usepackage{enumitem}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+\setlist{nosep}
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Muneeb}{Ahmed}
+%\address{Dieburger Straße 2, 64283, Darmstadt, Germany}
+\mobile{(+49) 176 70221259} 
+%%% Social
+\email{muneeb\_ahmed@outlook.com}
+\linkedin{https://www.linkedin.com/in/muneeb-ahmed-2322802b}
+%%% Optionals
+\position{Embedded Systems Engineer}
+%\quote{"Curiosity fuels motivation; which leads to innovation"}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  {Continental AG}
+  {}
+\lettertitle{95387BR: High Tech SW Developer for Next Generation Braking Systems (m / f)}
+\letteropening{Dear Frau Karen Fieser,}
+\letterclosing{Regards,}
+
+\introheading{Cover Letter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Cover Letter}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+
+%\begin{tabular}{lr}
+%\begin{minipage}{0.5\linewidth}
+%	\makelettertitle
+%\end{minipage} & 
+%\begin{minipage}{0.5\linewidth}
+%	\makecvheader
+%\end{minipage}
+%\end{tabular}
+\makecvheader
+\vspace{-8mm}
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+\cvparagraph{About Me}
+
+I am a Master of Science graduate in Information and communication engineering from "Technische Universität Darmstadt" and currently am searching for interesting opportunities in the embedded world.
+
+I have extensive experience in algorithm development from my previous work experiences. Whether it be for some image processing application or development of an Attitude and Heading Reference System. My bachelor thesis was implemented using Matlab so I'm well versed with other development platforms other than Python etc. 
+
+I stepped into the embedded world around a year ago. Since then, I have learned about operating system principles, various communication protocols and bus systems. I developed a Linux network driver for BeagleBone Black, have worked with RTOS systems such as FreeRTOS and Xenomai. Furthermore, I am doing online courses to get a deeper understanding of the ARM architecture, bootloaders etc. I know the basics of CAN from self study but now I want to implement it in a real application. I am making fast progress but I am hungry for more.
+
+
+\cvparagraph{Why Continental?}% AG\getrecipientname?}
+I want to be challenged and work on different projects where I am independent enough to be creative yet have some clear goals and milestones set into place. \getrecipientname\space has ever increasing projects that span multiple domains. I want to be a part of that innovation and take on the diversity of challenges they offer. Furthermore, I like the performance based corporate culture that Continental provides and its nurturing take on young professionals. I believe under the tutorship of the seasoned professionals of Continental AG, I can have a practical impact on the automotive industry whilst at the same time developing myself professionally to new heights.
+
+
+\cvparagraph{Why Me?}
+\begin{itemize}
+\setlength\itemsep{0mm}
+\item I am proficient in multiple programming languages and frameworks.
+\item I have in-depth knowledge of the complete software and algorithm development process.
+\item On every new job/task, I had to start from scratch and learn my way up. This has made me highly adept in learning new techniques and methods needed to creatively solve complex problems in the real world.
+\item I have excellent communication skills and can easily find the proper balance between autonomy and teamwork.
+\item I'm driven and highly motivated since I have finally found a profession that I love.
+\end{itemize}
+
+\cvparagraph{Other considerations}
+\begin{tabular*}{\textwidth}{L{5cm}@{}L{12.5cm}@{\extracolsep{\fill}}}
+\textbf{\textsc{Salary:}} & 48000 per anum\\
+\textbf{\textsc{Availability:}} & As soon as possible\\
+\end{tabular*}
+\bigskip
+
+Thank you for your consideration. I believe if hired, I would soon be an invaluable asset to your company.
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+\end{document}
